@@ -4,10 +4,10 @@ import { FaTimes } from "react-icons/fa";
 
 const MobileSidebar = ({filterFunctions, setmobileBar, isMobileBar}) => {
   return (
-    <div className={`hidden md:block fixed w-full h-full ${isMobileBar ? 'left-0 top-0 z-[60]' : '-left-full'}`}>
+    <div className={`fixed w-full h-full ${isMobileBar ? 'left-0 top-0 z-[60]' : '-left-full'}`}>
       <div onClick={() => setmobileBar(false)} className={`absolute ${isMobileBar ? 'w-full h-full' : 'w-0 h-0'} bg-black/50 z-[60] inset-0`}>
       </div>
-      <div className={`absolute overflow-y-scroll flex flex-col z-[70] max-w-[399px] w-full h-screen bg-white transition-all duration-500 ${isMobileBar ? 'left-0 ' : '-left-full'}`}>
+      <div className={`absolute overflow-y-scroll flex flex-col z-[70] max-w-[399px] w-4/5 sm:w-full h-screen bg-white transition-all duration-500 ${isMobileBar ? 'left-0 ' : '-left-full'}`}>
         <div className="sticky top-0 z-50 bg-white flex items-center justify-between border-b border-brand-gray-100 pt-6 pb-4 pl-7 pr-5">
           <h5 className="text-xl font-semibold text-brand-black-100" >
             Listing Filter

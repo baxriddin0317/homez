@@ -7,6 +7,14 @@
 @tailwind components;
 @tailwind utilities;
 
+*::-webkit-scrollbar{
+  @apply w-1 bg-brand-gray-400
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply w-full rounded-full bg-brand-black-200
+}
+
 body {
   @apply font-poppins text-brand-black-100
 }
