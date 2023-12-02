@@ -40,8 +40,8 @@ const HeroContent = () => {
           )))}
         </Tab.List>
         <Tab.Panels>
-          {tabs.map((tab,idx) => (
-            <Tab.Panel key={idx} className="bg-white relative rounded-b-xl rounded-tr-xl p-5 pr-0">
+          {tabs.map((tab,idx2) => (
+            <Tab.Panel key={idx2} className="bg-white relative rounded-b-xl rounded-tr-xl p-5 pr-0">
               <div className='grid md:grid-cols-12 items-center gap-6 pr-2.5 md:pr-0'>
                 <form className='md:col-span-5 lg:col-span-4 flex items-center rounded-xl bg-brand-gray-300 py-1.5 px-3 pl-5 gap-4 h-14'>
                   <RiHome6Line />

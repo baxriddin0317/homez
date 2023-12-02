@@ -11,8 +11,8 @@ const MenuItems = () => {
 
   return (
     <ul className="pt-16">
-      {menuItems.map((item) => (
-        <li className="px-7 relative h-[51px] text-brand-black-100  hover:bg-brand-main/20 hover:text-brand-main transition-all duration-500 cursor-pointer flex items-center group" key={item.id}>
+      {menuItems.map((item, idx) => (
+        <li className="px-7 relative h-[51px] text-brand-black-100  hover:bg-brand-main/20 hover:text-brand-main transition-all duration-500 cursor-pointer flex items-center group" key={idx}>
           <span className="block absolute h-full w-0.5 bg-transparent group-hover:bg-brand-main left-0 transition-all duration-500"></span>
           <a className="text-sm font-semibold" href="#" role="button">
             {item.title}

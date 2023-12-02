@@ -15,10 +15,10 @@ import { GiSettingsKnobs } from "react-icons/gi";
 import { CiSearch, CiStar } from "react-icons/ci";
 import {IoArrowUndoCircleOutline} from "react-icons/io5"
 
-const ListingSidebar = ({filterFunctions}) => {
+const ListingSidebar = ({filterFunction}) => {
   const [isActive, setIsActive] = useState(false);
   const [height, setHeight] = useState(0);
-  const ref = useRef();
+  const ref = useRef(null);
 
   useEffect(() => {
     if (ref.current) {
@@ -30,14 +30,14 @@ const ListingSidebar = ({filterFunctions}) => {
     <div className="relative bg-white p-7 rounded-xl mb-8">
       <div className="mb-8">
         <h6 className="text-sm font-semibold mb-4 text-brand-black-100">Find your home</h6>
-        <SearchBox filterFunctions={filterFunctions} />
+        <SearchBox filterFunctions={filterFunction} />
       </div>
       {/* End .widget-wrapper */}
 
       <div className="mb-8">
         <h6 className="text-sm font-semibold mb-4 text-brand-black-100">Listing Status</h6>
         <div className="flex flex-col gap-2.5">
-          <ListingStatus filterFunctions={filterFunctions} />
+          <ListingStatus filterFunctions={filterFunction} />
         </div>
       </div>
       {/* End .widget-wrapper */}
@@ -45,7 +45,7 @@ const ListingSidebar = ({filterFunctions}) => {
       <div className="mb-8">
         <h6 className="text-sm font-semibold mb-4 text-brand-black-100">Property Type</h6>
         <div className="flex flex-col gap-2.5">
-          <PropertyType filterFunctions={filterFunctions} />
+          <PropertyType filterFunctions={filterFunction} />
         </div>
       </div>
       
@@ -55,7 +55,7 @@ const ListingSidebar = ({filterFunctions}) => {
         <h6 className="text-sm font-semibold mb-4 text-brand-black-100">Price Range</h6>
         {/* Range Slider Desktop Version */}
         <div className="max-w-[300px] w-full relative">
-          <PriceSlider filterFunctions={filterFunctions} />
+          <PriceSlider filterFunctions={filterFunction} />
         </div>
       </div>
       {/* End .widget-wrapper */}
@@ -63,7 +63,7 @@ const ListingSidebar = ({filterFunctions}) => {
       <div className="mb-8">
         <h6 className="text-sm font-semibold mb-4 text-brand-black-100">Bedrooms</h6>
         <div className="flex">
-          <Bedroom filterFunctions={filterFunctions} />
+          <Bedroom filterFunctions={filterFunction} />
         </div>
       </div>
       {/* End .widget-wrapper */}
@@ -71,7 +71,7 @@ const ListingSidebar = ({filterFunctions}) => {
       <div className="mb-8">
         <h6 className="text-sm font-semibold mb-4 text-brand-black-100">Bathrooms</h6>
         <div className="flex">
-          <Bathroom filterFunctions={filterFunctions}  />
+          <Bathroom filterFunctions={filterFunction}  />
         </div>
       </div>
       {/* End .widget-wrapper */}
@@ -79,20 +79,20 @@ const ListingSidebar = ({filterFunctions}) => {
       <div className="mb-8">
         <h6 className="text-sm font-semibold mb-4 text-brand-black-100">Location</h6>
         <div className="">
-          <Location filterFunctions={filterFunctions} />
+          <Location filterFunctions={filterFunction} />
         </div>
       </div>
       {/* End .widget-wrapper */}
 
       <div className="mb-8">
         <h6 className="text-sm font-semibold mb-4 text-brand-black-100">Square Feet</h6>
-        <SquareFeet filterFunctions={filterFunctions}/>
+        <SquareFeet filterFunctions={filterFunction}/>
       </div>
       {/* End .widget-wrapper */}
 
       <div className="mb-8">
         <h6 className="text-sm font-semibold mb-4 text-brand-black-100">Year Built</h6>
-        <YearBuilt filterFunctions={filterFunctions}/>
+        <YearBuilt filterFunctions={filterFunction}/>
       </div>
       {/* End .widget-wrapper */}
 
@@ -110,7 +110,7 @@ const ListingSidebar = ({filterFunctions}) => {
           </button>
           <div className="relative z-50 overflow-hidden transition-all ease-in-out duration-500 mt-4" style={{ height: `${isActive ? `${height}px` : "0px"}` }} >
             <div className="grid grid-cols-2 gap-2" ref={ref}>
-              <OtherFeatures ref={ref} filterFunctions={filterFunctions} />
+              <OtherFeatures filterFunctions={filterFunction} />
             </div>
           </div>
         </div>

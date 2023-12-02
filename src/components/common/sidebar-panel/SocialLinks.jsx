@@ -26,8 +26,8 @@ const SocialLinks = () => {
 
   return (
     <div className="flex items-center gap-2">
-      {socialLinks.map((link) => (
-        <a className="text-brand-black-100 hover:text-brand-main transition-all duration-500" href={link.href} key={link.id}>
+      {socialLinks.map((link, idx) => (
+        <a className="text-brand-black-100 hover:text-brand-main transition-all duration-500" href={link.href} key={idx}>
           {link.icon}
         </a>
       ))}

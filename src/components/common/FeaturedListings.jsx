@@ -11,8 +11,8 @@ import { FaShower } from 'react-icons/fa6';
 export const FeaturedListings = ({cities}) => {
   return (
     <>
-     {cities.slice(0, 8).map((listing) => (
-      <div className="" key={listing.id}>
+     {cities.slice(0, 8).map((listing,idx) => (
+      <div className="" key={idx}>
           <div className="relative max-h-[248px] overflow-hidden rounded-md group">
             <Image
               width={382}

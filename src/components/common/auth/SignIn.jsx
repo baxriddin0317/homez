@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { FaCheck } from "react-icons/fa";
 import { FaApple, FaArrowRightLong, FaFacebookF, FaGoogle } from "react-icons/fa6";
 
 const SignIn = () => {
@@ -28,9 +29,11 @@ const SignIn = () => {
       {/* End Password */}
 
       <div className="flex items-center justify-between text-brand-black-100 mb-2.5">
-        <label className="flex items-center text-sm gap-1">
-          <input type="checkbox" defaultChecked="checked" />
-          <span className="checkmark" />
+        <label className="flex items-center text-sm gap-1" htmlFor="remember">
+          <input className="hidden peer" type="checkbox" id="remember" defaultChecked="checked" />
+          <div className="w-4 h-4 rounded border flex items-center justify-center border-brand-black-200 peer-checked:bg-brand-black-100 cursor-pointer" >
+            <FaCheck className="text-white text-[10px]" />
+          </div>
           Remember me
         </label>
         <a className="text-sm" href="#">

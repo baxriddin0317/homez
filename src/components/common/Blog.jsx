@@ -6,8 +6,8 @@ import Link from "next/link";
 export const Blog = () => {
   return (
     <>
-      {blogs.map((blog) => (
-        <div className="w-full" key={blog.id}>
+      {blogs.map((blog,idx) => (
+        <div className="w-full" key={idx}>
           <div className="overflow-hidden rounded-md group">
             <Image
               width={386}

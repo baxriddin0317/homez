@@ -6,15 +6,15 @@ import SocialLinks from '../sidebar-panel/SocialLinks'
 
 const MobileMenuSidebar = ({setBarPanel, barPanel}) => {
   return (
-    <div className={`hidden md:block fixed w-full h-full ${barPanel ? 'left-0 top-0 z-[60]' : '-left-full'}`}>
+    <div className={`fixed w-full h-full ${barPanel ? 'left-0 top-0 z-[60]' : '-left-full'}`}>
       <div onClick={() => setBarPanel(false)} className={`absolute ${barPanel ? 'w-full h-full' : 'w-0 h-0'} bg-black/50 z-[60] inset-0`}>
       </div>
-      <div className={`absolute flex flex-col z-[70] max-w-[399px] w-full h-screen bg-white transition-all duration-500 ${barPanel ? 'left-0 ' : '-left-full'}`}>
-        <div className="bg-brand-main/20 flex items-center justify-between border-b border-brand-gray-100 pt-6 pb-4 pl-7 pr-5">
-          <h5 className="text-xl font-semibold text-brand-black-100" >
+      <div className={`absolute flex flex-col z-[70] max-w-[399px] w-4/5 sm:w-full h-screen bg-white transition-all duration-500 ${barPanel ? 'left-0 ' : '-left-full'}`}>
+        <div className="bg-brand-main/20 flex items-center justify-between border-b border-brand-gray-100 pt-6 pb-4 pl-4 pr-3 sm:pl-7 sm:pr-5">
+          <h5 className="text-lg sm:text-xl font-semibold text-brand-black-100" >
           Welcome to Homez
           </h5>
-          <button onClick={() => setBarPanel(false)} className="flex items-center justify-center w-10 h-10 rounded-full bg-brand-main text-white">
+          <button onClick={() => setBarPanel(false)} className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-brand-main text-white">
             <FaTimes />
           </button>
         </div>

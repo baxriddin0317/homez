@@ -35,6 +35,7 @@ module.exports = {
         'dm_sans': ['DM Sans', 'sans-serif']
       },
       boxShadow: {
+        'header0': "0 1px 4px #181a2012",
         'header': "0px 1px 4px rgba(24, 26, 32, 0.07)",
         'date': "0 6px 15px #404f680d"
       },

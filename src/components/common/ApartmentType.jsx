@@ -43,8 +43,8 @@ export const ApartmentType = () => {
           },
         }}
       >
-        {apartmentType.map((type) => (
-          <SwiperSlide key={type.id}>
+        {apartmentType.map((type, idx) => (
+          <SwiperSlide key={idx}>
             <Link href="#">
               <div className="p-8 rounded-xl hover:text-brand-black-100 group bg-brand-black-100 hover:bg-white transition-all duration-500">
                 <div className="flex items-center justify-center text-3xl w-[70px] h-[70px] rounded-full bg-white/10 group-hover:bg-black/10 transition-all duration-500 mb-9">

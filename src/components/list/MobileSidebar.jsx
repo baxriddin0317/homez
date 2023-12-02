@@ -17,7 +17,7 @@ const MobileSidebar = ({filterFunctions, setmobileBar, isMobileBar}) => {
           </button>
         </div>
         <div className="p-0">
-          <ListingSidebar filterFunctions={filterFunctions} />
+          <ListingSidebar filterFunction={filterFunctions} />
         </div>
       </div>
     </div>

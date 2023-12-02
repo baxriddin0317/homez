@@ -265,7 +265,7 @@ export function PropertyFilteringList({isMobileBar, setmobileBar}) {
         <div className="max-w-7xl mx-auto px-3 sm:px-20 lg:px-6">
           <div className="lg:grid lg:grid-cols-3 items-start justify-between gap-6 xl:gap-12">
             <div className="hidden lg:block lg:col-span-1">
-              <ListingSidebar filterFunctions={filterFunctions} />
+              <ListingSidebar filterFunction={filterFunctions} />
             </div>
 
             <div className="lg:col-span-2 w-full">

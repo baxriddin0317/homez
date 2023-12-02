@@ -22,7 +22,7 @@ const AppWidget = () => {
       <h5 className="text-lg font-semibold text-white mb-2.5">Apps</h5>
       <div className="flex flex-col gap-2.5 mb-6 lg:mb-12">
         {appList.map((app, index) => (
-          <a href={app.link} target="_blank" rel="noopener noreferrer">
+          <a href={app.link} key={index} target="_blank" rel="noopener noreferrer">
             <div className="flex items-center w-52 rounded-xl gap-5 p-2.5 px-5 bg-white/10 hover:bg-brand-main text-white transition-all duration-500">
               <div className="flex-shrink-0 text-white text-3xl">
                 {app.icon}

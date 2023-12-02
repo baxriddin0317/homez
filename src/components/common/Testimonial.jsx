@@ -27,8 +27,8 @@ export const Testimonial = () => {
         }}
         slidesPerView={1}
       >
-        {testimonialData.map((testimonial) => (
-          <SwiperSlide key={testimonial.id}>
+        {testimonialData.map((testimonial,idx) => (
+          <SwiperSlide key={idx}>
             <div className="bg-white rounded-xl text-brand-black-100 p-8 pr-2.5">
               <div className="border-b border-brand-gray-100 pb-5 mb-5">
                 <div className="flex items-center justify-between pr-16 mb-6">

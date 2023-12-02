@@ -18,8 +18,8 @@ const ContactInfo = () => {
 
   return (
     <>
-      {contactInfo.map((info) => (
-        <div className="text-brand-black-100" key={info.id}>
+      {contactInfo.map((info, idx) => (
+        <div className="text-brand-black-100" key={idx}>
           <p className="text-sm leading-6 mb-4">{info.title}</p>
           {info.phone && (
             <h6 className="text-[15px] leading-5 font-semibold mb-2 hover:text-brand-main transition-all duration-500">

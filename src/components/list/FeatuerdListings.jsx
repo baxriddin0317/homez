@@ -12,10 +12,10 @@ import { RiFlashlightLine } from "react-icons/ri";
 const FeaturedListings = ({ data, colstyle }) => {
   return (
     <>
-      {data.map((listing) => (
+      {data.map((listing,idx) => (
         <div
           className={` ${colstyle ? "md:!col-span-1 lg:col-span-2" : "sm:col-span-2"} h-full `}
-          key={listing.id}
+          key={idx}
         >
           <div
             className={
