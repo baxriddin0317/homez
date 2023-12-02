@@ -32,7 +32,7 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`hidden lg:block bg-transparent border-b border-white/10 py-5 w-full ${pathname == '/' ? 'fixed transition-all duration-1000 shadow-header0' : 'sticky top-0'} z-50 ${
+        className={`hidden lg:block bg-transparent border-b border-white/10 py-5 w-full ${pathname == '/' ? 'fixed transition-all duration-1000' : 'sticky top-0 shadow-header0'} z-50 ${
           navbar ? "bg-white shadow-header border-brand-gray-100 z-50 animated" : ""
         }`}
       >
